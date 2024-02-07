@@ -63,7 +63,7 @@ header .interface {
   list-style-type: none;
 }
 
-li {
+.sobre-l {
   padding: 0 40px;
   display: inline-block;
   font-size: 20px;
@@ -172,8 +172,7 @@ section.sobre .flex {
 
 section.portfolio {
   padding: 80px 4%;
-  box-shadow: 0 0 40px 10px burlywood;
-}
+  box-shadow: 0 0 40px 10px #a9a7a5;}
 
 section.portfolio .flex {
   display: grid;
@@ -181,11 +180,7 @@ section.portfolio .flex {
   grid-column-gap: 24px;
   margin-top:60px ;
 }
-.img-port {
-  width: 360px;
-  height: 460px;
-  background-color: beige;
-}
+
 
 .img-port {
   max-width: 100%;
@@ -278,4 +273,28 @@ form .btn-enviar input[type=submit]{
   justify-content: center;
   align-items: center;
   font-size: 35px;
+
+} 
+/* SKILLS */
+.skills {
+  width: 50%;
+  margin: 30px auto 0;
+  
+}
+
+.skills-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: #fbfafa;
+  border: 0.5px solid #ececec;
+  grid-gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.skills-lista li {
+  font-size: 20px;
 }

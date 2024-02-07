@@ -122,5 +122,30 @@
         </div>
       </div>
     </section>
+
+    <section class="formulario">
+      <div class="interface">
+        <h2>Entre em contato</h2>
+        <form id="meuFormulario" action="https://formsubmit.co/brendamachado.2002lima@gmail.com" method="POST">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+          <input type="email" name="email" placeholder="Seu E-mail" required>
+          <input type="text" name="numero" placeholder="Seu número">
+          <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+          <div class="btn-enviar">
+            <input type="submit" value="ENVIAR">
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="fechar">&times;</span>
+        <p id="mensagem-sucesso">O email foi enviado com sucesso!</p>
+      </div>
+    </div>
+    
+    
+    
   </body>
 </html>

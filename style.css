@@ -16,6 +16,8 @@ body {
   position: relative;
   align-items: center; /* Centralizar verticalmente */
   justify-content: center;
+  gap: 60px;
+
 }
 
 .interface .btn-curriculo button {
@@ -29,10 +31,12 @@ body {
   transition: 0.2s;
 }
 
-button, form .btn-enviar input[type=submit]:hover  {
+button:hover,
+.enviar:hover  {
   box-shadow: 0px 0px 8px rebeccapurple;
   transform: scale(1.05);
 }
+
 /* css header */
 header {
   padding: 10px 4%;
@@ -94,7 +98,8 @@ section .topo-site .flex {
 
 .topo-site .txt-topo-site p {
   color: brown;
-  margin: 40px 0px;
+  margin: 20px 0px;
+  font-size: 20px;
 }
 
 .topo-site .img-topo-site {
@@ -137,6 +142,13 @@ section.sobre .flex {
 .sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
+  font-size: 20px;
+}
+
+.btn-social{
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sobre .txt-sobre .btn-social button {
   width: 60px;
@@ -150,9 +162,10 @@ section.sobre .flex {
   transition: 0.2s;
 }
 
-.img-sobre img {
+.img-topo-site img {
   width: 320px;
   height: 320px;
+  border-radius: 100%;
 }
 
 /* projeto */
@@ -260,38 +273,9 @@ form .btn-enviar input[type=submit]{
   cursor: pointer;
   transition: .2s;
 }
-
-/* Adicione o estilo do modal aqui */
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  text-align: center;
-}
-
-.fechar {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.fechar:hover,
-.fechar:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.sobre-mim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }

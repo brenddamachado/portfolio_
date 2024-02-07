@@ -6,17 +6,16 @@
 }
 body {
   height: 100vh;
-
 }
 .interface {
   max-width: 1280px;
   margin: 0 auto;
 }
-.flex{
+.flex {
   display: flex;
-   position: relative;
-   align-items: center; /* Centralizar verticalmente */
-  justify-content: center; 
+  position: relative;
+  align-items: center; /* Centralizar verticalmente */
+  justify-content: center;
 }
 
 .interface .btn-curriculo button {
@@ -27,10 +26,10 @@ body {
   border: 0;
   border-radius: 30px;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
- button:hover {
+button:hover {
   box-shadow: 0px 0px 8px rebeccapurple;
   transform: scale(1.05);
 }
@@ -66,7 +65,6 @@ li {
   font-size: 20px;
 }
 
-
 .nav {
   color: aqua;
   text-decoration: none;
@@ -80,70 +78,67 @@ li {
 /* fim header */
 
 /* main */
-section.topo-site{
+section.topo-site {
   padding: 40px 4%;
 }
-section .topo-site .flex{
-align-items: center;
-justify-content: center;
-gap: 90px;
+section .topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
-.topo-site h1{
+.topo-site h1 {
   color: antiquewhite;
   font-size: 42px;
   line-height: 40px;
 }
 
- .topo-site .txt-topo-site p{
-color: brown;
-margin:40px 0px ;
+.topo-site .txt-topo-site p {
+  color: brown;
+  margin: 40px 0px;
 }
 
-.topo-site .img-topo-site{
+.topo-site .img-topo-site {
   position: relative;
-  animation: flutuar 2s ease-in-out infinite alternate ;
+  animation: flutuar 2s ease-in-out infinite alternate;
 }
-@keyframes flutuar{
-  0%{
-    top:0;
-
+@keyframes flutuar {
+  0% {
+    top: 0;
   }
-  100%{
-    top:30px
+  100% {
+    top: 30px;
   }
 }
 
 /* sobre */
 
-section.sobre{
+section.sobre {
   padding: 80px 4%;
 }
-section.sobre .flex{
+section.sobre .flex {
   align-items: center;
   gap: 60px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
   color: aquamarine;
-
 }
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 30px;
-
 }
 
-.txt-sobre h2 span{
+.txt-sobre h2 span {
   color: black;
   display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
 }
-.sobre .txt-sobre .btn-social button{
+.sobre .txt-sobre .btn-social button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -152,11 +147,73 @@ section.sobre .flex{
   background-color: blue;
   cursor: pointer;
   margin: 0 5px;
-  transition: .2s;
+  transition: 0.2s;
+}
+
+.img-sobre img {
+  width: 320px;
+  height: 320px;
+}
+
+/* projeto */
+
+section.portfolio {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px burlywood;
+}
+
+section.portfolio .flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  margin-top:60px ;
+}
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: beige;
+}
+
+.img-port {
+  max-width: 100%;
+  height: 200px;
+  background-size: cover;
+  transition: 5s;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 100% 0%;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
 }
 
 
-.img-sobre img{
-  width: 320px;
-  height: 320px;
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b8;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-weight: 600;
+   color: #fff;
+   opacity:0 ;
+   transition: .5s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.portfolio .interface .titulo{
+  display: flex;
+  align-items: center;
+    justify-content: center;
 }

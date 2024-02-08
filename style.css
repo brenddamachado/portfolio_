@@ -24,15 +24,15 @@ body {
   gap: 60px;
 }
 
-.interface .btn-curriculo button {
+.interface  button {
   padding: 10px 40px;
-  font-size: 15px;
   font-weight: 600;
   background-color: #242424;
   color: #fff;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
+  font-size: 16px
 }
 
 button:hover,
@@ -107,8 +107,7 @@ section .topo-site .flex {
 
 .topo-site .txt-topo-site p {
   margin: 20px 0px;
-  font-size: 20px;
-}
+  font-size: 16px}
 
 .topo-site .img-topo-site {
   position: relative;
@@ -151,7 +150,7 @@ section.sobre .flex {
 .sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
-  font-size: 20px;
+  font-size: 16px
 }
 
 .btn-social {
@@ -182,7 +181,7 @@ section.sobre .flex {
 section.portfolio {
   height: 100vh;
   padding: 80px 4%;
-  box-shadow: 0 0 40px 10px #a9a7a5;
+ 
 }
 
 section.portfolio .flex {
@@ -194,7 +193,7 @@ section.portfolio .flex {
 
 .img-port {
   max-width: 100%;
-  height: 200px;
+  height: 220px;
   background-size: cover;
   transition: 5s;
   cursor: pointer;
@@ -259,7 +258,7 @@ form textarea {
   padding: 20px 15px;
   border-radius: 15px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px
 }
 
 form textarea {
@@ -297,16 +296,19 @@ form .btn-enviar input[type="submit"] {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  background-color: #242424;
-  color: #fff;
-  border: 0.5px solid #ececec;
+ 
   grid-gap: 20px;
   justify-items: center;
   padding: 20px;
 }
 
 .skills-lista li {
-  font-size: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
 }
 
 .entre-contato {
@@ -314,4 +316,7 @@ form .btn-enviar input[type="submit"] {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+}
+.icon-correto{
+  height: 25px;
 }

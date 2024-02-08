@@ -11,6 +11,7 @@
       integrity="sha512-...."
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./imgs/brenda2.png" type="image/x-icon">
   </head>
   <body>
     <section class="home">
@@ -23,15 +24,15 @@
           </div>
           <nav class="menu-desktop">
             <ul>
-              <li class="sobre-l"><a class="nav" href="#">Sobre</a></li>
-              <li class="sobre-l"><a class="nav" href="#">Conhecimentos</a></li>
-              <li class="sobre-l"><a class="nav" href="#">Projetos</a></li>
+              <li class="sobre-l"><a class="nav" href="#sobre">Sobre</a></li>
+              <li class="sobre-l"><a class="nav" href="#projeto">Projetos</a></li>
+              <li class="sobre-l"><a class="nav" href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <main>
-        <section class="topo-site">
+        <section class="topo-site" >
           <div class="interface">
             <div class="flex">
               <div class="txt-topo-site">
@@ -64,7 +65,7 @@
       </main>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <div class="interface">
         <!-- <h2 class="sobre-mim">Sobre mim</h2> -->
         <div class="flex">
@@ -94,12 +95,7 @@
             </p>
 
             <p>
-              Além disso, destaco-me por oferecer flexibilidade de contratação,
-              abrangendo opções como PJ, CLT ou trabalho freelance. Estou aberta
-              a desafios e oportunidades que me permitam aplicar meu
-              conhecimento de forma inovadora, participando ativamente no
-              desenvolvimento de projetos significativos.
-            </p>
+
 
             <!-- <div class="btn-social">
               <a href="#"
@@ -113,47 +109,89 @@
         </div>
         <div class="skills">
           <ul class="skills-lista">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Angular</li>
-            <li>Python</li>
-            <li>MySQL</li>
-            <li>Git</li>
-            <li>Node Js</li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />HTML
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />CSS
+            </li>
+            <li>
+              <img
+                class="icon-correto"
+                src="./imgs/correto.png"
+                alt=""
+              />JavaScript
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" /> React
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />
+              Angular
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />
+              Python
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />MySQL
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />Git
+            </li>
+            <li>
+              <img class="icon-correto" src="./imgs/correto.png" alt="" />Node
+              Js
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="projeto">
       <div class="interface">
         <h2 class="titulo">Projetos</h2>
         <div class="flex">
-          <div
-            class="img-port"
-            style="background-image: url(imgs/mundonegro.jpg)"
+          <a href="https://mundo-negro.vercel.app/" target="_blank">
+            <div
+              class="img-port"
+              style="background-image: url(imgs/mundonegro.jpg)"
+            >
+              <div class="overlay">Mundo Negro</div>
+            </div>
+          </a>
+          <a
+            href="https://8430b9dc-35db-4c74-ab02-e10500c72687-00-cv7wme6g2kn6.riker.replit.dev/"
+            target="_blank"
           >
-            <div class="overlay">projeto1</div>
-          </div>
-          <div
-            class="img-port"
-            style="background-image: url(imgs/mundonegro.jpg)"
+            <div
+              class="img-port"
+              style="background-image: url(imgs/telecall.jpg)"
+            >
+              <div class="overlay">Telecall</div>
+            </div>
+          </a>
+          <a href="https://naturale-ashen.vercel.app/" target="_blank">
+            <div
+              class="img-port"
+              style="background-image: url(imgs/hotfruit.jpg)"
+            >
+              <div class="overlay">Naturale</div>
+            </div>
+          </a>
+          <a href="https://amandaafreitas.github.io/projeto-grupo-frontenders/" target="_blank">
+            <div
+              class="img-port"
+              style="background-image: url(imgs/Dev-monster.jpg)"
+            >
+              <div class="overlay">Dev Monster</div>
+            </div></a
           >
-            <div class="overlay">projeto1</div>
-          </div>
-          <div
-            class="img-port"
-            style="background-image: url(imgs/mundonegro.jpg)"
-          >
-            <div class="overlay">projeto1</div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="formulario">
+    <section class="formulario" id="contato">
       <div class="interface">
         <h2 class="entre-contato">Entre em contato</h2>
         <form
@@ -176,5 +214,27 @@
       </div>
     </section>
 
+    <section>
+      <footer>
+        <div>
+          <div><hr></div>
+          <div>Saiba onde me encontrar</div>
+          <div><hr></div>
+        </div>
+        <div>
+          <div class="btn-social">
+            <a href="#"
+              ><button class="social"><i class="fab fa-linkedin"></i></button
+            ></a>
+            <a href="#"
+              ><button class="social"><i class="fab fa-github"></i></button
+            ></a>
+          </div> 
+        </div>
+        <div>
+          <p>© 2024 Brenda Machado. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

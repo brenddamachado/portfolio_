@@ -6,9 +6,7 @@
 }
 body {
   height: 100vh;
-  background-color:  #c3c3c3
-
-  ;
+  background-color: #c3c3c3;
 }
 .interface {
   max-width: 1280px;
@@ -20,22 +18,21 @@ body {
   align-items: center; /* Centralizar verticalmente */
   justify-content: center;
   gap: 60px;
-
 }
 
 .interface .btn-curriculo button {
   padding: 10px 40px;
   font-size: 15px;
   font-weight: 600;
-  background-color: #fbfafa;
-  border: 0.5px solid #ececec;
+  background-color: #242424;
+  color: #fff;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover,
-.enviar:hover  {
+.enviar:hover {
   box-shadow: 0px 0px 8px black;
   transform: scale(1.05);
 }
@@ -73,14 +70,16 @@ header .interface {
 }
 
 .nav {
-  color: #fff;
+  color: rgb(0, 0, 0);
+
   text-decoration: none;
   display: inline-block;
   transition: 0.2s;
 }
 .nav:hover {
-  color: rgb(0, 0, 0);
+  color: #434343;
   transform: scale(1.05);
+  font-size: 24px;
 }
 /* fim header */
 
@@ -94,13 +93,11 @@ section .topo-site .flex {
   gap: 90px;
 }
 .topo-site h1 {
-  color: antiquewhite;
   font-size: 42px;
   line-height: 40px;
 }
 
 .topo-site .txt-topo-site p {
-  color: brown;
   margin: 20px 0px;
   font-size: 20px;
 }
@@ -128,9 +125,9 @@ section.sobre .flex {
   gap: 60px;
 }
 
-.sobre .txt-sobre {
+/* .sobre .txt-sobre {
   color: aquamarine;
-}
+} */
 .sobre .txt-sobre h2 {
   font-size: 40px;
   line-height: 40px;
@@ -138,7 +135,7 @@ section.sobre .flex {
 }
 
 .txt-sobre h2 span {
-  color: black;
+  /* color: black; */
   display: block;
 }
 
@@ -148,10 +145,10 @@ section.sobre .flex {
   font-size: 20px;
 }
 
-.btn-social{
+.btn-social {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .sobre .txt-sobre .btn-social button {
   width: 60px;
@@ -159,7 +156,7 @@ section.sobre .flex {
   border-radius: 50%;
   border: 0;
   font-size: 22px;
-  background-color: blue;
+
   cursor: pointer;
   margin: 0 5px;
   transition: 0.2s;
@@ -175,15 +172,15 @@ section.sobre .flex {
 
 section.portfolio {
   padding: 80px 4%;
-  box-shadow: 0 0 40px 10px #a9a7a5;}
+  box-shadow: 0 0 40px 10px #a9a7a5;
+}
 
 section.portfolio .flex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
-  margin-top:60px ;
+  margin-top: 60px;
 }
-
 
 .img-port {
   max-width: 100%;
@@ -200,89 +197,87 @@ section.portfolio .flex {
   background-position: 100% 100%;
 }
 
-
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #000000b8;
-   border-radius: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 24px;
-   font-weight: 600;
-   color: #fff;
-   opacity:0 ;
-   transition: .5s;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.overlay:hover{
+.overlay:hover {
   opacity: 1;
 }
 
-.portfolio .interface .titulo{
+.portfolio .interface .titulo {
   display: flex;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
 }
 
 /* Formulario */
-section.formulario{
+section.formulario {
   padding: 80px 4%;
 }
 
-form{
-max-width: 500px;
-margin: 0 auto;
-display: flex;
-justify-content: center;
-flex-direction: column;
-gap: 10px;
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   background-color: #242424;
   border: 0;
   outline: 0;
-  padding: 20px 15px ;
+  padding: 20px 15px;
   border-radius: 15px;
-  color: aquamarine;
+  color: #fff;
   font-size: 18px;
 }
 
-form textarea{
+form textarea {
   resize: none;
   max-height: 200px;
 }
 
-form .btn-enviar{
+form .btn-enviar {
   margin-top: 20px;
   text-align: center;
 }
 
-form .btn-enviar input[type=submit]{
+form .btn-enviar input[type="submit"] {
   width: 120px;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
-.sobre-mim{
+.sobre-mim {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 35px;
-
-} 
+}
 /* SKILLS */
 .skills {
   width: 50%;
   margin: 30px auto 0;
-  
 }
 
 .skills-lista {
@@ -291,7 +286,8 @@ form .btn-enviar input[type=submit]{
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  background-color: #fbfafa;
+  background-color: #242424;
+  color: #fff;
   border: 0.5px solid #ececec;
   grid-gap: 20px;
   justify-items: center;
@@ -302,7 +298,7 @@ form .btn-enviar input[type=submit]{
   font-size: 20px;
 }
 
-.entre-contato{
+.entre-contato {
   display: flex;
   align-items: center;
   justify-content: center;

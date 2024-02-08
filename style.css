@@ -24,20 +24,20 @@ body {
   gap: 60px;
 }
 
-.interface  button {
+.interface button {
   padding: 10px 40px;
   font-weight: 600;
   background-color: #242424;
   color: #fff;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.2s;
-  font-size: 16px
+  transition: 0.7s;
+  font-size: 16px;
 }
 
 button:hover,
 .enviar:hover {
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 6px black;
   transform: scale(1.05);
 }
 
@@ -52,10 +52,6 @@ header .interface {
 }
 .logo img {
   width: 120%;
-}
-
-.home{
-  height: 100vh;
 }
 
 .logo {
@@ -85,7 +81,8 @@ header .interface {
   transition: 0.2s;
 }
 .nav:hover {
-  color: #fff;
+  color:#494848 ;
+  /* color:#5f5d5d; */
   transform: scale(1.05);
   font-size: 24px;
 }
@@ -107,7 +104,8 @@ section .topo-site .flex {
 
 .topo-site .txt-topo-site p {
   margin: 20px 0px;
-  font-size: 16px}
+  font-size: 16px;
+}
 
 .topo-site .img-topo-site {
   position: relative;
@@ -133,15 +131,17 @@ section.sobre .flex {
   gap: 60px;
 }
 
-/* .sobre .txt-sobre {
-  color: aquamarine;
-} */
+.sobre .txt-sobre {
+  width: 50%;
+}
 .sobre .txt-sobre h2 {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 30px;
 }
-
+.home{
+  height: 100vh;
+}
 .txt-sobre h2 span {
   /* color: black; */
   display: block;
@@ -150,13 +150,18 @@ section.sobre .flex {
 .sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .btn-social {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 48px;
+}
+i {
+  font-size: 30px;
+  color: black;
 }
 .sobre .txt-sobre .btn-social button {
   width: 60px;
@@ -181,7 +186,7 @@ section.sobre .flex {
 section.portfolio {
   height: 100vh;
   padding: 80px 4%;
- 
+  display: flex;
 }
 
 section.portfolio .flex {
@@ -200,6 +205,9 @@ section.portfolio .flex {
   border-radius: 10px;
   transition: 100% 0%;
   position: relative;
+  background-color: #cfcfcf;
+
+  border: 1px solid #111;
 }
 
 .img-port:hover {
@@ -232,12 +240,21 @@ section.portfolio .flex {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 35px;
 }
 
 /* Formulario */
 section.formulario {
   padding: 80px 4%;
   height: 100vh;
+}
+
+.sobre .interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
 }
 
 form {
@@ -258,7 +275,7 @@ form textarea {
   padding: 20px 15px;
   border-radius: 15px;
   color: #fff;
-  font-size: 16px
+  font-size: 16px;
 }
 
 form textarea {
@@ -296,7 +313,7 @@ form .btn-enviar input[type="submit"] {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
- 
+
   grid-gap: 20px;
   justify-items: center;
   padding: 20px;
@@ -316,7 +333,98 @@ form .btn-enviar input[type="submit"] {
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
+  font-size: 35px;
 }
-.icon-correto{
+.icon-correto {
   height: 25px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.direitos p {
+  margin-bottom: 30px;
+}
+
+.mensagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 10px 40px;
+}
+.mensagem h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.mensagem p {
+  font-size: 20px;
+}
+@media screen and (max-width: 1084px) {
+  section.portfolio .flex {
+     grid-template-columns: repeat(2, 1fr);
+  }
+
+section.portfolio{
+height: 0%;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  section.portfolio .flex {
+     grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .img-port {
+    width: 350px;
+ 
+  }
+
+  section .topo-site .flex{
+
+   flex-direction: column-reverse;
+  }
+
+
+  .topo-site h1 {
+    font-size: 32px;
+}
+
+.topo-site .txt-topo-site p {
+ 
+  font-size: 18px;
+}
+.txt-topo-site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sobre .txt-sobre {
+width:150% ;
+
+}
+.sobre-mim{
+  font-size: 32px;
+}
+
+.sobre .txt-sobre p{
+  font-size: 18px;
+}
+
+.skills-lista li{
+  font-size: 18px;
+}
+
+
+
+section.portfolio{
+  height: 150%;
+}
 }

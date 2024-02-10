@@ -407,7 +407,7 @@ justify-content: center;
 }
 
 .menu-mobile nav ul li a:hover {
-  background-color: lightcoral;
+  background-color: rgb(176, 175, 175);
 }
 .overlay-menu {
   background-color: #000000b8;
